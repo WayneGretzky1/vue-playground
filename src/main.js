@@ -1,7 +1,7 @@
 import './assets/main.css'
 import { createApp } from 'vue'
 import { VueFire, VueFireAuth } from 'vuefire'
-import { firebaseApp } from './firebase'
+import { firebaseApp } from './firebase_conf'
 import App from './App.vue'
 import router from './router'
 

@@ -1,7 +1,7 @@
 <script setup>
-import { ref, defineProps } from 'vue'
-const props = defineProps({ isFlipped: Boolean })
-const emit = defineEmits(['flip', 'unflip'])
+import { defineProps } from 'vue'
+defineProps({ isFlipped: Boolean })
+defineEmits(['flip', 'unflip'])
 </script>
 
 <template>
@@ -11,8 +11,8 @@ const emit = defineEmits(['flip', 'unflip'])
 
 <style scoped>
 div {
-  width: 10rem;
-  height: 14rem;
+  width: 10vw;
+  height: 10vh;
   border-radius: 1rem;
   background-color: bisque;
   color: black;
