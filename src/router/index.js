@@ -15,11 +15,13 @@ const router = createRouter({
       path: '/decks',
       name: 'decks',
       component: DecksView,
+      meta: { requiresAuth: true },
     },
     {
       path: '/study',
       name: 'study',
       component: StudyView,
+      meta: { requiresAuth: false },
     },
   ],
 })

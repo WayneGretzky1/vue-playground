@@ -1,6 +1,4 @@
 <script setup>
-import LoginButton from '../components/LoginButton.vue'
-
 import { computed, onMounted, ref, watchEffect } from 'vue'
 import { useCollection, useDocument } from 'vuefire'
 import { collection, doc, getDocs } from 'firebase/firestore'
@@ -32,7 +30,6 @@ watchEffect(() => {
 
 <template>
   <main>
-    <LoginButton />
     <ul>
       <li v-for="card in cards" :key="card.id">
         <card>{{ card.rank }} of {{ card.suit }}</card>
